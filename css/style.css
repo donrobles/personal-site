@@ -38,26 +38,26 @@ h1 {
 
 h2 {
     font-size: 1.50em;
-    margin: 1.0em 0 0.87em 0;
+    margin: 1.0em 0 0.3em 0;
 }
 
 h3 {
     font-size: 1.30em;
-    margin: 1.0em 0 0.87em 0;
+    margin: 1.0em 0 0.3em 0;
 }
 
 h4 {
     font-size: 1.13em;
-    margin: 1.0em 0 0.88em 0;
+    margin: 1.0em 0 0 0;
 }
 
 h5 {
     font-size: 1.00em;
-    margin: 1.0em 0 1.00em 0;
+    margin: 1.0em 0 0 0;
 }
 
 p, pre {
-    margin: 1em 0;
+    margin: .75em 0;
 }
 
 pre {
@@ -72,6 +72,10 @@ ul, ol, blockquote {
 
 hr {
     margin: 1em 0;
+}
+
+section div, section h3{
+    margin-left: 2%;
 }
 
 /* Lists of underlined links are difficult to read. The top margin
@@ -106,8 +110,12 @@ h1, h2, h3, h4, h5, h6, strong, dt, th {
 
 /* The default color (black) is too dark for large text in
    bold font. */
-h1, h2, h3, h4 {
+h1, h2 {
     color: #333;
+}
+
+h3, h4 {
+    color: #4d4d4d;
 }
 
 h5, h6, dt {
@@ -148,13 +156,18 @@ hr {
     background-color: #ede6d5;
 }
 
-small {
-    font-size: .9em;
-}
-
 /*** SIMPLE CLASSES ***/
 .no-bullet {
     list-style: none;
+}
+
+/*** Paragraph Formatting ***/
+.passage p {
+    margin-left: 2%;
+}
+
+.passage p:first-child {
+    margin-top: 0;
 }
 
 /*** MANUAL PAGES ***/
