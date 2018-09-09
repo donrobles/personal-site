@@ -98,61 +98,6 @@ ul ul, ol ul {
     margin-bottom: 0;
 }
 
-/* Separate description lists from preceding text */
-dl {
-    margin: 1em 0 0 0;
-}
-
-/* separate the "term" from subsequent "description" */
-dt {
-    margin: .5em 0;
-}
-
-/* separate the "description" from subsequent list item
-   when the final <dd> child is an anonymous box */
-dd {
-    margin: .5em 3% 1em 3%;
-}
-
-/* separate anonymous box (used to be the first element in <dd>)
-   from subsequent <p> */
-dd p {
-    margin: .5em 0;
-}
-
-table {
-    display: block;
-    overflow: auto;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-}
-
-th {
-    padding: .3em .5em;
-    text-align: center;
-}
-
-td {
-    padding: .2em .5em;
-}
-
-address {
-    margin-bottom: 1em;
-}
-
-caption {
-    margin-bottom: .5em;
-    text-align: center;
-}
-
-sup {
-    vertical-align: super;
-}
-
-sub {
-    vertical-align: sub;
-}
-
 /* Style */
 
 h1, h2, h3, h4, h5, h6, strong, dt, th {
@@ -173,18 +118,9 @@ a[href] {
     color: #005090;
 }
 
-a[href]:visited {
-    color: #100070;
-}
-
 a[href]:active, a[href]:hover {
-    color: #100070;
+    color: #6f7000;
     text-decoration: none;
-}
-
-h1 a[href]:visited, h2 a[href]:visited, h3 a[href]:visited,
-h4 a[href]:visited {
-    color: #005090;
 }
 
 h1 a[href]:hover, h2 a[href]:hover, h3 a[href]:hover,
@@ -212,52 +148,13 @@ hr {
     background-color: #ede6d5;
 }
 
-table {
-    border: 0;
-}
-
-abbr, acronym {
-    border-bottom: 1px dotted #000;
-    text-decoration: none;
-    cursor: help;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-em {
-    font-style: italic;
-}
-
 small {
     font-size: .9em;
 }
 
-img {
-    max-width: 100%
-}
-
 /*** SIMPLE CLASSES ***/
-
-.center, .c {
-    text-align: center;
-}
-
-.nocenter {
-    text-align: left;
-}
-
 .no-bullet {
     list-style: none;
-}
-
-.inline-list li {
-    display: inline
-}
-
-.netscape4, .no-display {
-    display: none;
 }
 
 /*** MANUAL PAGES ***/
@@ -300,41 +197,8 @@ button.btn-toc {
 }
 
 /* Inserts */
-table.cartouche td {
-    padding: 1.5em;
-}
-
-div.display, div.lisp, div.smalldisplay,
-div.smallexample, div.smalllisp {
+div.display, div.smalldisplay, div.smallexample {
     margin-left: 3%;
-}
-
-div.example {
-    padding: .8em 1.2em .4em;
-}
-
-pre.example {
-    padding: .8em 1.2em;
-}
-
-div.example, pre.example {
-    margin: 1em 0 1em 3%;
-    -webkit-border-radius: .3em;
-    -moz-border-radius: .3em;
-    border-radius: .3em;
-    border: 1px solid #d4cbb6;
-    background-color: #f2efe4;
-}
-
-div.example > pre.example {
-    padding: 0 0 .4em;
-    margin: 0;
-    border: none;
-}
-
-pre.menu-comment {
-    padding-top: 1.3em;
-    margin: 0;
 }
 
 /*** FOR WIDE SCREENS ***/
@@ -342,10 +206,5 @@ pre.menu-comment {
 @media (min-width: 40em) {
     body {
         padding: .5em 3em 1em 3em;
-    }
-
-    div.header, div.node {
-        margin: 0 -3em;
-        padding: 0 3em;
     }
 }
