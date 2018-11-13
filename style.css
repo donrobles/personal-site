@@ -198,6 +198,24 @@ hr {
     display: flex;
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    /* Styles */
+    .nav-buttons {
+        margin: 0 -1em;
+        padding: 0 1em;
+        max-width: 100%;
+        display: flex;
+    }
+
+    a button {
+        width: 100%;
+        font-size: 2em;
+    }
+}
+
 a.btn-previous, a.btn-next {
     width: 40%;
 }
