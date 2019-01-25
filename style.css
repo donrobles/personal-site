@@ -5,6 +5,7 @@
 
 html, body {
     font-size: 1em;
+	font-family: Georgia;
     text-align: left;
     text-decoration: none;
 }
@@ -26,7 +27,7 @@ body {
 /* Size and positioning */
 
 p, pre, li, dt, dd, table, code, address {
-    line-height: 1.3em;
+    line-height: 1.6em;
 }
 
 h1 {
@@ -219,18 +220,24 @@ div.display, div.smalldisplay, div.smallexample {
     margin-left: 3%;
 }
 
-/*** FOR WIDE SCREENS ***/
-
-@media (min-width: 40em) {
-    body {
-        padding: .5em 3em 1em 3em;
-    }
-}
-
 /*** SMARTPHONES PORTRAIT/LANDSCAPE ***/
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
+@media only screen and (max-device-width : 300px) {
+	/***  PAGE LAYOUT  ***/
+
+	html, body {
+		font-size: 2em;
+		font-family: Georgia;
+		text-align: left;
+		text-decoration: none;
+	}
+
+	body {
+		margin: 0 auto;
+		padding: .5em 1em 1em 1em;
+		background-color: white;
+		border: .1em solid #c0c0c0;
+	}
+
     /* Styles */
     .nav-buttons {
         margin: 0 -1em;
@@ -243,4 +250,6 @@ and (max-device-width : 480px) {
         width: 100%;
         font-size: 2em;
     }
+	
+	
 }
