@@ -4,7 +4,7 @@
 /***  PAGE LAYOUT  ***/
 
 html, body {
-    font-size: 1em;
+    font-size: 1.3em;
 	font-family: Georgia;
     text-align: left;
     text-decoration: none;
@@ -27,7 +27,7 @@ body {
 /* Size and positioning */
 
 p, pre, li, dt, dd, table, code, address {
-    line-height: 1.6em;
+    line-height: 1.5em;
 }
 
 h1 {
@@ -215,6 +215,12 @@ button.btn-toc {
     width: 20%;
 }
 
+/* Images */
+figure img, figcaption{
+    max-width: 92%;
+    margin-left: 5%;
+}
+
 /* Inserts */
 div.display, div.smalldisplay, div.smallexample {
     margin-left: 3%;
@@ -222,10 +228,10 @@ div.display, div.smalldisplay, div.smallexample {
 
 /*** SMARTPHONES PORTRAIT/LANDSCAPE ***/
 @media only screen and (max-device-width : 300px) {
-	/***  PAGE LAYOUT  ***/
 
+    /***  PAGE LAYOUT  ***/
 	html, body {
-		font-size: 2em;
+		font-size: 1.26em;
 		font-family: Georgia;
 		text-align: left;
 		text-decoration: none;
@@ -237,6 +243,17 @@ div.display, div.smalldisplay, div.smallexample {
 		background-color: white;
 		border: .1em solid #c0c0c0;
 	}
+
+    h1 {
+        text-align: center;
+        font-size: 2.3em;
+        margin: 5% 0;
+        text-decoration-line: underline;
+    }
+
+    p, pre, li, dt, dd, table, code, address {
+        line-height: 1.46em;
+    }
 
     /* Styles */
     .nav-buttons {
@@ -250,6 +267,5 @@ div.display, div.smalldisplay, div.smallexample {
         width: 100%;
         font-size: 2em;
     }
-	
-	
+
 }
