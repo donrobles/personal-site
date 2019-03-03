@@ -226,7 +226,7 @@ div.display, div.smalldisplay, div.smallexample {
     }
 
     p, pre, li, dt, dd, table, code, address {
-        line-height: 1.46em;
+        line-height: 1.86em;
     }
 
     /* Styles */
@@ -276,7 +276,7 @@ div.display, div.smalldisplay, div.smallexample {
     }
 
     p, pre, li, dt, dd, table, code, address {
-        line-height: 1.46em;
+        line-height: 1.66em;
     }
 
     /* Styles */
@@ -322,5 +322,9 @@ div.display, div.smalldisplay, div.smallexample {
         font-size: 2.2em;
         margin: 0 0 1% 0;
         text-decoration-line: underline;
+    }
+
+    p, pre, li, dt, dd, table, code, address {
+        line-height: 1.46em;
     }
 }
