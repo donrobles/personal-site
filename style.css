@@ -3,39 +3,46 @@
 
 /***  PAGE LAYOUT  ***/
 
-html, body {
-    font-size: 1.3em;
-	font-family: Georgia;
-    text-align: left;
-    text-decoration: none;
-}
+/*html, body {*/
+    /*font-size: 1.3em;*/
+	/*font-family: Georgia;*/
+    /*text-align: left;*/
+    /*text-decoration: none;*/
+/*}*/
 
 html {
     background-color: #e7e7e7;
 }
 
-body {
-    max-width: 74.92em;
-    margin: 0 auto;
-    padding: .5em 1em 1em 1em;
-    background-color: white;
-    border: .1em solid #c0c0c0;
-}
+/*body {*/
+    /*max-width: 74.92em;*/
+    /*margin: 0 auto;*/
+    /*padding: .5em 1em 1em 1em;*/
+    /*background-color: white;*/
+    /*border: .1em solid #c0c0c0;*/
+/*}*/
 
 /*** BASIC ELEMENTS ***/
 
 /* Size and positioning */
 
-p, pre, li, dt, dd, table, code, address {
+/*p, pre, li, dt, dd, table, code, address {
     line-height: 1.5em;
 }
 
-h1 {
+h1.title-top {
     text-align: center;
     font-size: 3em;
-    margin: 1em 0;
+    margin: 1em 0 0 0;
     text-decoration-line: underline;
 }
+
+h1.title-bot {
+    text-align: center;
+    font-size: 3em;
+    margin: 0 0 1em 0;
+    text-decoration-line: underline;
+}*/
 
 h2 {
     font-size: 1.50em;
@@ -226,28 +233,35 @@ div.display, div.smalldisplay, div.smallexample {
     margin-left: 3%;
 }
 
-/*** SMARTPHONES PORTRAIT/LANDSCAPE ***/
-@media only screen and (max-device-width : 300px) {
+/*** BROWSERS PORTRAIT/LANDSCAPE ***/
+@media screen and (min-width : 769px) and (max-width: 2000px){
 
     /***  PAGE LAYOUT  ***/
-	html, body {
-		font-size: 1.26em;
-		font-family: Georgia;
-		text-align: left;
-		text-decoration: none;
-	}
+    html, body {
+        font-size: 1.5em;
+        font-family: Georgia;
+        text-align: left;
+        text-decoration: none;
+    }
 
-	body {
-		margin: 0 auto;
-		padding: .5em 1em 1em 1em;
-		background-color: white;
-		border: .1em solid #c0c0c0;
-	}
+    body {
+        margin: 0 auto;
+        padding: .5em 1em 1em 1em;
+        background-color: white;
+        border: .1em solid #c0c0c0;
+    }
 
-    h1 {
+    h1.title-top {
         text-align: center;
-        font-size: 2.3em;
-        margin: 5% 0;
+        font-size: 3.7em;
+        margin: 5% 0 0 0;
+        text-decoration-line: underline;
+    }
+
+    h1.title-bot {
+        text-align: center;
+        font-size: 3.7em;
+        margin: 0 0 1% 0;
         text-decoration-line: underline;
     }
 
@@ -265,7 +279,88 @@ div.display, div.smalldisplay, div.smallexample {
 
     a button {
         width: 100%;
-        font-size: 2em;
+        font-size: 1em;
+    }
+}
+
+/*** TABLETS PORTRAIT/LANDSCAPE ***/
+@media screen and (min-width : 351px) and (max-width: 768px){
+
+    /***  PAGE LAYOUT  ***/
+	html, body {
+		font-size: 1.26em;
+		font-family: Georgia;
+		text-align: left;
+		text-decoration: none;
+	}
+
+	body {
+		margin: 0 auto;
+		padding: .5em 1em 1em 1em;
+		background-color: white;
+		border: .1em solid #c0c0c0;
+	}
+
+    h1.title-top {
+        text-align: center;
+        font-size: 2.3em;
+        margin: 5% 0 0 0;
+        text-decoration-line: underline;
     }
 
+    h1.title-bot {
+        text-align: center;
+        font-size: 2.3em;
+        margin: 0 0 1% 0;
+        text-decoration-line: underline;
+    }
+
+    p, pre, li, dt, dd, table, code, address {
+        line-height: 1.46em;
+    }
+
+    /* Styles */
+    .nav-buttons {
+        margin: 0 -1em;
+        padding: 0 1em;
+        max-width: 100%;
+        display: flex;
+    }
+
+    a button {
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+/*** SMARTPHONES PORTRAIT/LANDSCAPE ***/
+@media screen and (max-width : 350px) {
+    /***  PAGE LAYOUT  ***/
+    html, body {
+        font-size: 1.12em;
+        font-family: Georgia;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    body {
+        margin: 0 auto;
+        padding: .5em 1em 1em 1em;
+        background-color: white;
+        border: .1em solid #c0c0c0;
+    }
+
+    h1.title-top {
+        text-align: center;
+        font-size: 2.2em;
+        margin: 5% 0 0 0;
+        text-decoration-line: underline;
+    }
+
+    h1.title-bot {
+        text-align: center;
+        font-size: 2.2em;
+        margin: 0 0 1% 0;
+        text-decoration-line: underline;
+    }
 }
