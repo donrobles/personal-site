@@ -1,48 +1,8 @@
 /* This stylesheet is used by manuals and a few older resources. */
 @import url('reset.css');
 
-/***  PAGE LAYOUT  ***/
-
-/*html, body {*/
-    /*font-size: 1.3em;*/
-	/*font-family: Georgia;*/
-    /*text-align: left;*/
-    /*text-decoration: none;*/
-/*}*/
-
-html {
-    background-color: #e7e7e7;
-}
-
-/*body {*/
-    /*max-width: 74.92em;*/
-    /*margin: 0 auto;*/
-    /*padding: .5em 1em 1em 1em;*/
-    /*background-color: white;*/
-    /*border: .1em solid #c0c0c0;*/
-/*}*/
-
 /*** BASIC ELEMENTS ***/
-
 /* Size and positioning */
-
-/*p, pre, li, dt, dd, table, code, address {
-    line-height: 1.5em;
-}
-
-h1.title-top {
-    text-align: center;
-    font-size: 3em;
-    margin: 1em 0 0 0;
-    text-decoration-line: underline;
-}
-
-h1.title-bot {
-    text-align: center;
-    font-size: 3em;
-    margin: 0 0 1em 0;
-    text-decoration-line: underline;
-}*/
 
 h2 {
     font-size: 1.50em;
