@@ -309,6 +309,20 @@ div.display, div.smalldisplay, div.smallexample {
 
 /*** SMARTPHONES PORTRAIT/LANDSCAPE ***/
 @media screen and (max-width: 350px) {
+
+    /*** TITLE LOGO ***/
+    div.logo-container {
+        margin-top: 5%;
+        margin-bottom: 15%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    img#title-logo {
+        width: 100%;
+        height: auto;
+    }
+
     /***  PAGE LAYOUT  ***/
     html, body {
         font-size: 1.12em;
