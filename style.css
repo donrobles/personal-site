@@ -129,20 +129,6 @@ hr {
     background-color: #ede6d5;
 }
 
-/*** TITLE LOGO ***/
-
-div.logo-container {
-    margin-top: 3%;
-    margin-bottom: 10%;
-    margin-left: 30%;
-    margin-right: 30%;
-}
-
-img#title-logo {
-    width: 100%;
-    height: auto;
-}
-
 /*** SIMPLE CLASSES ***/
 .no-bullet {
     list-style: none;
@@ -207,8 +193,36 @@ div.display, div.smalldisplay, div.smallexample {
     margin-left: 3%;
 }
 
+@media screen and (min-width: 2001px){
+    /*** TITLE LOGO ***/
+    div.logo-container {
+        margin-top: 10%;
+        margin-bottom: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+
+    img#title-logo {
+        width: 100%;
+        height: auto;
+    }
+}
+
 /*** BROWSERS PORTRAIT/LANDSCAPE ***/
 @media screen and (min-width: 769px) and (max-width: 2000px) {
+
+    /*** TITLE LOGO ***/
+    div.logo-container {
+        margin-top: 6%;
+        margin-bottom: 10%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    img#title-logo {
+        width: 100%;
+        height: auto;
+    }
 
     /***  PAGE LAYOUT  ***/
     html, body {
@@ -259,6 +273,19 @@ div.display, div.smalldisplay, div.smallexample {
 
 /*** TABLETS PORTRAIT/LANDSCAPE ***/
 @media screen and (min-width: 351px) and (max-width: 768px) {
+
+    /*** TITLE LOGO ***/
+    div.logo-container {
+        margin-top: 12%;
+        margin-bottom: 23%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    img#title-logo {
+        width: 100%;
+        height: auto;
+    }
 
     /***  PAGE LAYOUT  ***/
     html, body {
@@ -312,10 +339,10 @@ div.display, div.smalldisplay, div.smallexample {
 
     /*** TITLE LOGO ***/
     div.logo-container {
-        margin-top: 5%;
-        margin-bottom: 15%;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-top: 9%;
+        margin-bottom: 19%;
+        margin-left: 12%;
+        margin-right: 12%;
     }
 
     img#title-logo {
@@ -354,5 +381,20 @@ div.display, div.smalldisplay, div.smallexample {
 
     p, pre, li, dt, dd, table, code, address {
         line-height: 1.46em;
+    }
+}
+
+@media screen and (max-width: 850px) and (orientation: landscape) {
+    /*** TITLE LOGO ***/
+    div.logo-container {
+        margin-top: 3%;
+        margin-bottom: 10%;
+        margin-left: 34%;
+        margin-right: 34%
+    }
+
+    img#title-logo {
+        width: 100%;
+        height: auto;
     }
 }
